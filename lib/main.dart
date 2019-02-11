@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import './ui/detail_screen.dart';
+import './ui/first_screen.dart';
+import './ui/second_screen.dart';
+import './ui/my_custom_form.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +20,27 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget{
+class MyHomePage extends StatelessWidget{ //Change screen
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      // home: MyHomePage(),
+      initialRoute: '/',
+      routes: {
+        "/": (context) => MyCustomForm(),
+        "/second": (context) => SecondScreen(),
+        "/detail": (context) => DetailScreen(),
+      },
+    );
+  }
+
+}
+/*class MyHomePage extends StatelessWidget{ //navbar
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -50,7 +74,7 @@ class MyHomePage extends StatelessWidget{
       ),
     );
   }
-}
+}*/
 /*class MyHomePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
