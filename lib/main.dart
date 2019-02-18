@@ -30,11 +30,12 @@ class MyHomePage extends StatelessWidget{ //Change screen
         primarySwatch: Colors.blue,
       ),
       // home: MyHomePage(),
-      initialRoute: '/',
+      initialRoute: '/first',
       routes: {
         "/": (context) => MyCustomForm(),
         "/second": (context) => SecondScreen(),
         "/detail": (context) => DetailScreen(),
+        "/first": (context) => FirstScreen()
       },
     );
   }
@@ -75,7 +76,7 @@ class MyHomePage extends StatelessWidget{ //Change screen
     );
   }
 }*/
-/*class MyHomePage extends StatefulWidget {
+/*class MyHomePage extends StatefulWidget { //Column
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
