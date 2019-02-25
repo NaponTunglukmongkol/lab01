@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget{ //Change screen
         primarySwatch: Colors.blue,
       ),
       // home: MyHomePage(),
-      initialRoute: '/listdata',
+      initialRoute: '/second',
       routes: {
         "/": (context) => MyCustomForm(),
         "/second": (context) => SecondScreen(),
