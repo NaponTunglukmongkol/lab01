@@ -4,6 +4,7 @@ import './ui/first_screen.dart';
 import './ui/second_screen.dart';
 import './ui/my_custom_form.dart';
 import './ui/list_data.dart';
+import './ui/todo_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,13 +32,14 @@ class MyHomePage extends StatelessWidget{ //Change screen
         primarySwatch: Colors.blue,
       ),
       // home: MyHomePage(),
-      initialRoute: '/second',
+      initialRoute: '/todo',
       routes: {
         "/": (context) => MyCustomForm(),
         "/second": (context) => SecondScreen(),
         "/detail": (context) => DetailScreen(),
         "/first": (context) => FirstScreen(),
-        "/listdata": (context) => ListData()
+        "/listdata": (context) => ListData(),
+        "/todo": (context) => TodoScreen()
       },
     );
   }
