@@ -7,6 +7,7 @@ import './ui/list_data.dart';
 import './ui/todo_screen.dart';
 import './ui/login_screen.dart';
 import './ui/register_screen.dart';
+import './ui/book_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +35,7 @@ class MyHomePage extends StatelessWidget{ //Change screen
         primarySwatch: Colors.blue,
       ),
       // home: MyHomePage(),
-      initialRoute: '/login',
+      initialRoute: '/book',
       routes: {
         "/": (context) => MyCustomForm(),
         "/second": (context) => SecondScreen(),
@@ -43,7 +44,8 @@ class MyHomePage extends StatelessWidget{ //Change screen
         "/listdata": (context) => ListData(),
         "/todo": (context) => TodoScreen(),
         "/login": (context) => LoginScreen(),
-        "/register": (context) => RegisterScreen()
+        "/register": (context) => RegisterScreen(),
+        "/book": (context) => BookScreen()
       },
     );
   }
